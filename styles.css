@@ -1,0 +1,8 @@
+main{
+    display: grid;
+    grid-column: 1fr 1fr;
+}
+#selections{
+    display: grid;
+    grid-column: 1fr 1fr 1fr;
+}
