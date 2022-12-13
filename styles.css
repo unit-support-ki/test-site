@@ -1,8 +1,51 @@
 main{
     display: grid;
-    grid-column: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    max-width: 75%;
+
+}
+/* Main orginization of grid */
+.img_slider{
+    grid-column: 1/2;
+    grid-row: 1/5;
+    max-width: 100%;
+    justify-items: stretch;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 #selections{
     display: grid;
-    grid-column: 1fr 1fr 1fr;
+    grid-template-columns: 1fr auto 1fr;
+    grid-column: 2/3;
+    column-gap: 15px;
+    row-gap: 15px;
 }
+#description_title{
+    grid-column: 2/3;
+}
+.description{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+#manage_bookings{
+    grid-column: 2/3;
+    display:flex;
+}
+
+/* Other Layouts */
+
+.item{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    padding: 10PX 10PX 10PX 10PX;
+}
+
+img{
+    max-width: 70%;
+    max-height: 500px;
+}
+select{
+    grid-column: 1/4;
+}
+
